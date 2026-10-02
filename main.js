@@ -103,8 +103,10 @@ const expenseList = document.getElementById('expenseList')
 function setUsername() {
     userName = prompt('Masukkan Nama Anda')
     nameHeader = getElementById('Username')
-    nameHeader.innerText = `Halo, <span>${userName}</span>`
+    nameHeader.innerText = `Halo, <strong>${userName}</strong>`
 }
+
+setUsername()
 
 function generateId() {
     return +new Date()
@@ -282,7 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return
     }
 
-    setUsername()
     loadData()
     renderDashboard()
 })
