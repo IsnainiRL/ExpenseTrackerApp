@@ -103,7 +103,7 @@ const expenseList = document.getElementById('expenseList')
 function setUsername() {
     userNameInput = prompt('Masukkan Nama Anda')
     nameHeader = document.getElementById('Username')
-    nameHeader.innerText = `Halo, <strong>${userNameInput}</strong>`
+    nameHeader.innerHTML = `Halo, <strong>${userNameInput}</strong>`
 }
 
 function generateId() {
