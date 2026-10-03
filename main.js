@@ -279,6 +279,14 @@ function searchTransaction() {
     generateTransaction(suitableItem)
 }
 
+// Another Code
+
+if (document.cookie === '') {
+    generateCookie()
+}
+
+setUsername()
+
 // Event
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -287,11 +295,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return
     }
 
-    if (document.cookie === '') {
-        generateCookie()
-    }
-
-    setUsername()
     loadData()
     renderDashboard()
 })
