@@ -108,7 +108,7 @@ function setUsername() {
 
 function generateCookie() {
     userNameInput = prompt('Masukkan nama anda :')
-    document.cookie = `${userNameInput}`
+    document.cookie = `Username=${userNameInput}`
 }
 
 function generateId() {
