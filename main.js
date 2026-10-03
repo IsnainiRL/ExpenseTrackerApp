@@ -101,9 +101,13 @@ const expenseList = document.getElementById('expenseList')
 // Function
 
 function setUsername() {
-    userNameInput = prompt('Masukkan Nama Anda')
     nameHeader = document.getElementById('Username')
     nameHeader.innerHTML = `Halo, <strong>${userNameInput}</strong>`
+}
+
+function generateCookie() {
+    userNameInput = prompt('Masukkan nama anda :')
+    document.cookie = `${userNameInput}`
 }
 
 function generateId() {
@@ -280,6 +284,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof Storage === 'undefined') {
         alert('Browser Anda Tidak Mendukung Local Storage')
         return
+    }
+
+    if (document.cookie === '') {
+        generateCookie()
     }
 
     setUsername()
