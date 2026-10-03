@@ -101,8 +101,9 @@ const expenseList = document.getElementById('expenseList')
 // Function
 
 function setUsername() {
+    userName = document.cookie
     nameHeader = document.getElementById('Username')
-    nameHeader.innerHTML = `Halo, <strong>${userNameInput}</strong>`
+    nameHeader.innerHTML = `Halo, <strong>${userName}</strong>`
 }
 
 function generateCookie() {
