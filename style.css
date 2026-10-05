@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --bg-page: #F6F7F9;
-  --bg-card: #FFFFFF;
+  --bg-page: #18181b;
+  --bg-card: #27272a;
 
-  --text-dark: #09090B;
+  --text-dark: #f4f4f5;
   --text-muted: #71717A;
 
   --accent-blue: #2563EB;
