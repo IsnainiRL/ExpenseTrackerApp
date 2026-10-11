@@ -187,11 +187,11 @@ function searchTransaction() {
 
 // Another Code
 
-if (document.cookie === '') {
-    generateCookie()
-}
+// if (document.cookie === '') {
+//     generateCookie()
+// }
 
-setUsername()
+// setUsername()
 
 // Event
 
