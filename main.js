@@ -76,7 +76,7 @@ function generateElement(objectData) {
     deleteButton.addEventListener('click', () => {deleteTransaction(objectData.id)})
 
     const buttonHeader = document.createElement('div')
-    buttonHeader.append(editTypeButton, deleteButton)
+    // buttonHeader.append(editTypeButton, deleteButton)
 
     const transactionCard = document.createElement('div')
     transactionCard.setAttribute('data-testid', 'transactionItem')
